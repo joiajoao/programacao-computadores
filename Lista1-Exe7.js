@@ -15,3 +15,11 @@ function exe7(vet){ // Vet representa vetor -> O que fizermos com o vet, será e
     }
     while (numero >= 0)
 }
+
+function calculaMedia(vet){
+    var soma = 0
+    for (var i=0; i < vet.legnth; i++){
+        soma = soma + vet[i]
+    }
+    console.log(`A Média é: ${soma/vet.le}`)
+}

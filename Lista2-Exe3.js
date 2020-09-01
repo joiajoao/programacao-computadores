@@ -69,7 +69,7 @@ function calcularQtde(vet){ // vet vai apontar para vetor
             qtde++
         }
     }
-    console.log(`Entrou na função calcular quantidade`)
+    console.log(`Quantidade de Individuos ${qtde}`)
 }
 
 function calcularPercentual(vet){ // vet vai apontar para vetor

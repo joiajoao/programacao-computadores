@@ -61,9 +61,23 @@ function calcularMaiorIdade(vet){ // vet vai apontar para vetor
 }
 
 function calcularQtde(vet){ // vet vai apontar para vetor
+    let qtde = 0
+    for(let i=0; i < vet.length; i++){
+        if (((vet[i].sexo == "F") && (vet[i].idade >= 20) && (vet[i].idade <= 45))
+        ||
+        ((vet[i].olhos == "A") && (vet[i].altura < 1.70))){
+            qtde++
+        }
+    }
     console.log(`Entrou na função calcular quantidade`)
 }
 
 function calcularPercentual(vet){ // vet vai apontar para vetor
-    console.log(`Entrou na função calcular percentual`)
+    let conta = 0
+    for(let i=0; i < vet.length; i++){
+        if(vet[i].sexo == "M"){
+            conta++
+        }
+    }
+    console.log(`O Percetual de homen é ${(conta/vet.length)*100}`)
 }
